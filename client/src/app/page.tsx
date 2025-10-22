@@ -1,8 +1,11 @@
+import Categories from '@/components/Categories';
 import React from 'react'
 
 const Home = () => {
   return (
-    <div className='text-airbnb'>Home</div>
+    <main className='max-w-[1500px] mx-auto px-6'>
+      <Categories />
+    </main>
   )
 }
 
