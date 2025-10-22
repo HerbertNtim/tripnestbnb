@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RootPage = () => {
+const Home = () => {
   return (
-    <div className='text-airbnb'>RootPage</div>
+    <div className='text-airbnb'>Home</div>
   )
 }
 
-export default RootPage
+export default Home;
