@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import SearchFilters from '@/components/SearchFilters'
+import UserNav from '@/components/UserNav'
 
 function Navbar() {
   return (
@@ -18,7 +19,7 @@ function Navbar() {
           </div>
 
           <div className='flex items-center space-x-6'>
-            Add User Property
+            <UserNav />
           </div>
         </div>
       </div>
