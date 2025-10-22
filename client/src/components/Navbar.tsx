@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SearchFilters from '@/components/SearchFilters'
 
 function Navbar() {
   return (
@@ -13,7 +14,7 @@ function Navbar() {
           </Link>
 
           <div className='flex space-x-6'>
-            Search Filters 
+            <SearchFilters />
           </div>
 
           <div className='flex items-center space-x-6'>
