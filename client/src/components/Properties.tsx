@@ -7,8 +7,6 @@ const Properties = () => {
       <PropertiesItem />
       <PropertiesItem />
       <PropertiesItem />
-      <PropertiesItem />
-      <PropertiesItem />
     </>
   )
 }
