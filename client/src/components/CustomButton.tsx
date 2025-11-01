@@ -8,8 +8,8 @@ interface CustomButtonProps {
 
 const CustomButton = ({label, onClick, className}: CustomButtonProps) => {
   return (
-    <button className={`w-full py-4 bg-airbnb hover:bg-airbnb-dark text-white rounded-xl transition text-center cursor-pointer ${className}`} onClick={onClick}>
-      <span className='font-semibold'>{label}</span>
+    <button className={`${className} py-4 bg-airbnb hover:bg-airbnb-dark text-white rounded-xl transition text-center cursor-pointer`} onClick={onClick}>
+      <span className='font-semibold text-xl'>{label}</span>
     </button>
   )
 }
