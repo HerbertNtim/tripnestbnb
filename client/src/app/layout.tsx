@@ -3,6 +3,7 @@ import { Inter, Poppins } from "next/font/google";
 import './globals.css';
 import Navbar from "@/components/Navbar";
 import LoginModal from "@/components/LoginModal";
+import SignupModal from "@/components/SignupModal";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -36,6 +37,7 @@ export default function RootLayout({
           {children}
         </div>
         <LoginModal />
+        <SignupModal />
       </body>
     </html>
   );

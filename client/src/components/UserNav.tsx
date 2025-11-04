@@ -1,12 +1,14 @@
 'use client'
 
 import useLoginModal from '@/utils/LoginStore'
+import useSignupModal from '@/utils/SignupStore'
 import { useState } from 'react'
 import { FiUser } from 'react-icons/fi'
 import { SlMenu } from 'react-icons/sl'
 
 const UserNav = () => {
-  const loginStore = useLoginModal();
+  const { open: openLoginModal } = useLoginModal();
+  const { open: openSignupModal } = useSignupModal();
   const [isOpen, setIsOpen] = useState(false);
 
 
@@ -19,8 +21,8 @@ const UserNav = () => {
 
       {isOpen && (
         <div className='w-[220px] absolute top-[60px] right-0 bg-white rounded-lg border shadow-md flex flex-col'>
-          <MenuLink label='Log In' onClick={() => {loginStore.open()}} />
-          <MenuLink label='Sign Up' onClick={() => { }} />
+          <MenuLink label='Log In' onClick={() => openLoginModal()} />
+          <MenuLink label='Sign Up' onClick={() => openSignupModal()} />
         </div>
       )}
     </div>
