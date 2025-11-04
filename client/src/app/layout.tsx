@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import './globals.css';
 import Navbar from "@/components/Navbar";
+import LoginModal from "@/components/LoginModal";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <div className="pt-32">
           {children}
         </div>
+        <LoginModal />
       </body>
     </html>
   );

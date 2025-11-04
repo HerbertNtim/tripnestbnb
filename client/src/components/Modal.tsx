@@ -3,14 +3,14 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { MdOutlineClose } from 'react-icons/md'
 
-type ModalProps = {
+interface ModalProps {
   label: string;
   content: React.ReactElement;
   isOpen: boolean;
   close: () => void;
 }
 
-const Modal = ({label, content, isOpen, close}: ModalProps) => {
+const Modal = ({ label, content, isOpen, close }: ModalProps) => {
   const [showModal, setShowModal] = useState(isOpen)
 
   useEffect(() => {
@@ -24,6 +24,9 @@ const Modal = ({label, content, isOpen, close}: ModalProps) => {
       close()
     }, 200)
   }, [close])
+
+  if (!isOpen) return null;
+
 
   return (
     <div className='flex items-center justify-center fixed inset-0 z-50 bg-black/60'>
