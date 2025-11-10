@@ -2,6 +2,7 @@
   "cSpell.words": [
     "PYTHONDONTWRITEBYTECODE",
     "PYTHONUNBUFFERED",
+    "runserver",
     "tripnest"
   ]
 }
